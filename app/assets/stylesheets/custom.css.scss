@@ -1,5 +1,31 @@
 @import 'bootstrap/dist/css/bootstrap';
 
 .navbar {
-background-color: #EAECEE  !important;
+background-color: #000000  !important;
+}
+
+.nav-link{
+  color: white !important;
+}
+
+#logo{
+  float: left;
+  font-size: 1.2cm;
+  color: #fff ;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: none;
 }
