@@ -7,7 +7,7 @@
       <div class="col-8 mt-4">
         <div class="card text-center">
           <div class="card-header">
-            Featured
+            By: <%= @article.user.username  if @article.user %>
           </div>
           <div class="card-body">
             <div class="card-text text-left"><%= simple_format(@article.description)%></div>
@@ -23,5 +23,3 @@
       </div>
 
   </div>
-
-  
