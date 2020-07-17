@@ -1,3 +1,8 @@
+<h1 class="text-center mt-4">Listing all Article</h1>
+<div class="flickr_pagination">
+  <%= will_paginate @users, :container => false %>
+</div>
+
 <div class="container">
   <% @users.each do |user| %>
   <div class="row justify-content-md-center">
@@ -10,7 +15,7 @@
           <p class="card-text"><%= pluralize(user.articles.count, 'article') %></p>
           <%= link_to 'View Profile', user, class:"btn btn-outline-success" %>
           <%= link_to 'Edit Profile', edit_user_path(user), class:"btn btn-outline-info" %>
-          
+
         </div>
         <div class="card-footer text-muted">
           2 days ago
@@ -19,4 +24,8 @@
       </div>
     </div>
   <% end %>
+</div>
+
+<div class="flickr_pagination mb-4">
+  <%= will_paginate @users, :container => false %>
 </div>
